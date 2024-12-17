@@ -5,6 +5,7 @@ import EditTask from '@/views/EditTask.vue';
 
 const routes = [
   { path: '/', component: Home },
+  { path: '/vue-task-manager', component: Home },
   { path: '/task/:id', component: TaskDetails, props: true },
   { path: '/edit/:id', component: EditTask, props: true }
 ];
