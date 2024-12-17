@@ -22,35 +22,75 @@ export default {
 </script>
 
 <style>
-.form-group {
-  background-color: #1e1e1e;
-  color: #e0e0e0;
+#app {
+  font-family: 'Arial', sans-serif;
+  background-color: #121212; /* Темний фон для додатка */
+  color: #e0e0e0; /* Світлий текст для контрасту */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
-.form-group .form-label {
+/* Стилі для хедера */
+header {
+  background-color: #1f1f1f; /* Темний фон для хедера */
+  color: #ffffff; /* Білий текст */
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 2px solid #343a40; /* Тонка границя для відокремлення */
+}
+
+header nav a {
+  color: #e0e0e0; /* Світлий текст для посилань */
+  text-decoration: none;
+  margin: 0 1rem;
+}
+
+header nav a.router-link-active {
   font-weight: bold;
+  border-bottom: 2px solid #e63946; /* Підкреслення активної сторінки */
 }
 
-.form-control {
-  color: #e0e0e0;
+main {
+  flex-grow: 1;
+  padding: 1rem;
 }
 
-.form-control::placeholder {
-  color: #a9a9a9;
+/* Темний стиль футера */
+footer {
+  background-color: #1f1f1f; /* Темний фон */
+  color: #e0e0e0; /* Світлий текст */
+  font-size: 0.9rem;
+  text-align: center;
+  border-top: 2px solid #343a40;
 }
 
-.form-control:focus {
+/* Кнопки */
+.btn-outline-light {
   border-color: #e63946;
-  box-shadow: 0 0 5px rgba(230, 57, 70, 0.5);
+  color: #e63946;
 }
 
-.btn-primary {
+.btn-outline-light:hover {
   background-color: #e63946;
-  border-color: #e63946;
+  color: #ffffff;
 }
 
-.btn-primary:hover {
-  background-color: #d62839;
-  border-color: #d62839;
+.btn {
+  margin: 0.5rem 0; /* Відступи між кнопками */
+}
+
+.container {
+  background-color: #1e1e1e; /* Темний фон для контейнера */
+  padding: 2rem;
+  border-radius: 8px; /* Округлені кути */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Тінь для ефекту */
+}
+
+.text-muted {
+  color: #aaa !important; /* Світлий колір для завершених завдань */
 }
 </style>
