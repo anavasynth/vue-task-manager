@@ -93,4 +93,12 @@ footer {
 .text-muted {
   color: #aaa !important; /* Світлий колір для завершених завдань */
 }
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s, transform 0.5s;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+  transform: translateY(-20px);
+}
 </style>
